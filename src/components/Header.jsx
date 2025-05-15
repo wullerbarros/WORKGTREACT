@@ -1,9 +1,46 @@
-import React from 'react'
+import React from 'react';
+import logo from '../assets/img/img-header/logo.svg'; 
+import carrinho from '../assets/img/img-header/Group 53581.svg'; 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
   return (
-    <div>Header</div>
-  )
+    <header className="bg-white font-inter">
+      <div className="flex justify-between items-center h-[80px] px-10">
+        <img src={logo} alt="Logo Geração Tech" />
+        <div className="relative flex items-center">
+          <input
+            type="text"
+            className="bg-gray-100 w-[559px] h-[60px] pr-10 pl-3 rounded-md"
+            placeholder="Pesquisar produto..."
+          />
+          <button className="absolute inset-y-0 right-0 flex items-center pr-3 focus:outline-none">
+            <FontAwesomeIcon icon={faMagnifyingGlass} className="text-gray-500 cursor-pointer" />
+          </button>
+        </div>
+        <div className="flex items-center gap-5">
+          <a href="#" className="text-[#4F4F4F] text-[16px] font-medium hover:underline cursor-pointer">
+            Cadastre-se
+          </a>
+          <button className="bg-[#C92071] w-[114px] h-[40px] rounded-[8px] font-bold text-[14px] text-white cursor-pointer hover:bg-pink-500">
+            Entrar
+          </button>
+        </div>
+        <div className="flex items-center">
+          <img src={carrinho} alt="Carrinho de compras" className="w-[30px] h-[30px] cursor-pointer" />
+        </div>
+      </div>
+      <nav className="h-[50px] items-left flex">
+        <ul className="flex gap-10 text-[#4F4F4F] text-[16px] font-medium items-center justify-center h-full mx-[40px]">
+          <li className="hover:underline hover:text-[#C92071] cursor-pointer">Home</li>
+          <li className="hover:underline hover:text-[#C92071] cursor-pointer">Produtos</li>
+          <li className="hover:underline hover:text-[#C92071] cursor-pointer">Categorias</li>
+          <li className="hover:underline hover:text-[#C92071] cursor-pointer">Meus Pedidos</li>
+        </ul>
+      </nav>
+    </header>
+  );
 }
 
-export default Header
+export default Header;
