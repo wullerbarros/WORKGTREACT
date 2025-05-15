@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/img/img-header/logo.svg'; 
+import Logo from './Logo';
 import carrinho from '../assets/img/img-header/Group 53581.svg'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <header className="bg-white font-inter">
       <div className="flex justify-between items-center h-[80px] px-10">
-        <img src={logo} alt="Logo Geração Tech" />
+        <Logo alt="Logo Geração Tech" />
         <div className="relative flex items-center">
           <input
             type="text"
