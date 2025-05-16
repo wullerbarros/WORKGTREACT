@@ -1,14 +1,14 @@
 import React from 'react';
-import Logo from './Logo';
-import carrinho from '../assets/img/img-header/Group 53581.svg'; 
+import carrinho from '../assets/img/img-header/carrinho.svg'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import Logo from './Logo';
 
 const Header = () => {
   return (
     <header className="bg-white font-inter">
       <div className="flex justify-between items-center h-[80px] px-10">
-        <Logo alt="Logo Geração Tech" />
+        <Logo / >
         <div className="relative flex items-center">
           <input
             type="text"
