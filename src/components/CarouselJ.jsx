@@ -35,7 +35,7 @@ function CarouselJ() {
   ];
 
   return (
-    <section className="bg-gray-100 flex flex-col items-center justify-center !font-[inter] w-full h-[681px] top-[194px]">
+    <section className="bg-[#F5F5F5] flex flex-col items-center justify-center !font-[inter] w-full h-[681px] top-[194px]">
       <div className="w-full relative rounded-lg overflow-hidden shadow-xl">
         <Carousel autoplay dotPosition="bottom">
           {slidesCarousel.map((slide, index) => (
