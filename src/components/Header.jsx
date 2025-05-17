@@ -7,7 +7,7 @@ import Logo from './Logo';
 
 const Header = () => {
   return (
-    <header className="bg-white font-inter">
+    <header className="bg-white !font-[inter]">
       <div className="flex justify-between items-center h-[80px] px-10">
         <Logo / >
         <div className="relative flex items-center">
