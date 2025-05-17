@@ -41,23 +41,23 @@ function CarouselJ() {
           {slidesCarousel.map((slide, index) => (
             <div key={index}>
               <div className="flex">
-                <div className="w-1/2 flex flex-col justify-center pl-[100px] pr-6">
-                  <p className="text-[#F6AA1C] !font-bold tracking-widest mt-[124px] text-base">
+                <div className="w-1/2 flex flex-col justify-center pl-[100px] pr-[100px]">
+                  <p className="text-[#F6AA1C] !font-bold tracking-widest mt-[124px] text-base !font-[inter]">
                     {slide.title}
                   </p>                 
-                  <h2 className="!text-[64px] text-[#1F1F1F] !font-extrabold tracking-[1px] leading-[66px]">
-                    <div>Queima de estoque</div>
+                  <h2 className="!text-[64px] text-[#1F1F1F] !font-extrabold !font-[inter] tracking-[1px] leading-[66px]">
+                    <div>Queima de</div>
                     <div className="flex items-center">
-                      Nike
+                      stoque Nike
                       <img
                         src={slide.fireImage}
                         alt="imagem de um foguinho"
-                        className="w-15 h-15 ml-1"
+                        className="w-15 h-18 ml-1"
                       />
                     </div>
                   </h2>                  
-                  <p className="text-[#474747] !text-[18px] !font-normal tracking-[0.75px] leading-[34px] pr-[150px]">{slide.description}</p>
-                  <button className="bg-[#C92071] !text-[#F5F5F5] font-inter h-[48px] w-[220px] rounded-[8px] inline-flex items-center justify-center cursor-pointer hover:bg-[#FF89D7]">
+                  <p className="text-[#474747] !text-[18px] !font-normal tracking-[0.75px] !font-[inter] leading-[34px] pr-[80px] mt-[20x]">{slide.description}</p>
+                  <button className="bg-[#C92071] !text-[#F5F5F5] !font-bold !text-[16px] !font-[inter] mt-[40px] leading-[24px] tracking-[0.75px] h-[48px] w-[220px] rounded-[8px] cursor-pointer hover:bg-[#FF69B4] transform transition duration-300 ease-in-out">
                     {slide.buttonText}
                   </button>
                 </div>

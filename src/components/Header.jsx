@@ -24,7 +24,7 @@ const Header = () => {
           <a href="#" className="text-[#4F4F4F] text-[16px] font-medium hover:underline cursor-pointer">
             Cadastre-se
           </a>
-          <button className="bg-[#C92071] w-[114px] h-[40px] rounded-[8px] font-bold font-inter text-[14px] text-[#F7F7FC] cursor-pointer hover:bg-[#FF89D7]">
+          <button className="bg-[#C92071] w-[114px] h-[40px] rounded-[8px] font-bold !text-[14px] !text-[#F7F7FC] !font-[inter] mt-[44px] leading-[22px] tracking-[0.75px] cursor-pointer hover:bg-[#FF69B4] transition ease-in-out duration-300">
             Entrar
           </button>
         </div>
