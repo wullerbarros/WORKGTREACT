@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import Logo from './Logo';
 
+
 const Header = () => {
   return (
     <header className="bg-white font-inter">
