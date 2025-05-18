@@ -9,3 +9,28 @@
   --color-quaternary: [#F7F7FC];  
   --font-inter: "Inter", "sans-serif";
 }
+
+.ant-carousel .slick-dots li {
+  width: 12px !important;
+  height: 12px !important;
+  margin: 0 6px!important;
+}
+
+.ant-carousel .slick-dots li button {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 50% !important;
+  background-color: #C92071;
+  opacity: 0.4;
+    
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+  background-color: #C92071;
+  opacity: 1;
+  width: 100% !important; 
+  height: 100% !important; 
+  border-radius: 50% !important; 
+  padding: 0 !important; 
+  transform: scale(1) !important; 
+}
