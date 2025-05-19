@@ -3,7 +3,7 @@ import Cards from '../components/Cards'
 
 const Home = () => {
   return (
-    <Cards/>
+    <Cards quantidade={8} />
   )
 }
 

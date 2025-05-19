@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
 
 const ProductListingPage = () => {
   return (
-    <div>ProductListingPage</div>
-  )
-}
+    <>
+      <Filter />
+      <Card quantidade={16}/>
+    </>
+  );
+};
 
-export default ProductListingPage
+export default ProductListingPage;
