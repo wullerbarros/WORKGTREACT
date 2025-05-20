@@ -1,29 +1,33 @@
 import React from 'react'
+import camisaTracada from '../assets/img/img-colecaoDestaque/camisaTraçada.svg'
+import foneTracado from '../assets/img/img-colecaoDestaque/foneTraçado.svg'
+import calcaTracada from '../assets/img/img-colecaoDestaque/calcaTraçada.svg'
+import tenisTracado from '../assets/img/img-colecaoDestaque/tenisTraçado.svg'
 
 function BodyJ() {
   const colecaoDestaque = [
     {
-        imagemSrc: '../assets/img/img-colecaoDestaque/camisaPreta.svg',
+        imagemSrc: camisaTracada,
         altImagem: "imagem de um traço de uma camisa",
         titulo: "Camisetas"
     },
     {
-        imagemSrc: './img-colecaoDestaque/calça.svg',
+        imagemSrc: calcaTracada,
         altImagem: "imagem de um traço de uma calça",
         titulo: "Calças"
     },
     {
-        imagemSrc: './img-colecaoDestaque/calça.svg',
+        imagemSrc: calcaTracada,
         altImagem: "imagem de um traço de uma camisa",
         titulo: "Bonés"
     },
     {
-        imagemSrc: './img-colecaoDestaque/Group.svg',
+        imagemSrc: foneTracado,
         altImagem: "imagem de um traço de um heaphone",
         titulo: "Headphones"
     },
     {
-        imagemSrc: './img-colecaoDestaque/tenis.svg',
+        imagemSrc: tenisTracado,
         altImagem: "imagem de um traço de um tenis",
         titulo: "Tênis"
     }

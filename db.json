@@ -1,0 +1,54 @@
+{
+  "colecoes": {
+    "colecaoDestaque1": [
+      {
+        "desconto": "30% OFF",
+        "titulo": "Novo drop supreme",
+        "imagemSrc": "camisaPreta.svg",
+        "altImagem": "camiseta preta",
+        "textoBotao": "Comprar"
+      },
+      {
+        "desconto": "30% OFF",
+        "titulo": "Coleção Adidas",
+        "imagemSrc": "tenisPreto.svg",
+        "altImagem": "imagem de um tênis branco com detalhes pretos",
+        "textoBotao": "Comprar"
+      },
+      {
+        "desconto": "30% OFF",
+        "titulo": "Novo Beats Bass",
+        "imagemSrc": "fone.svg",
+        "altImagem": "imagem de fone de ouvido, modelo Supra-auricular",
+        "textoBotao": "Comprar"
+      }
+    ],
+    "colecaoDestaque2": [
+      {
+        "imagemSrc": "camisaPreta.svg",
+        "altImagem": "imagem de um traço de uma camisa",
+        "titulo": "Camisetas"
+      },
+      {
+        "imagemSrc": "calca.svg",
+        "altImagem": "imagem de um traço de uma calça",
+        "titulo": "Calças"
+      },
+      {
+        "imagemSrc": "bone.svg",
+        "altImagem": "imagem de um traço de um boné",
+        "titulo": "Bonés"
+      },
+      {
+        "imagemSrc": "headphone.svg",
+        "altImagem": "imagem de um traço de um headphone",
+        "titulo": "Headphones"
+      },
+      {
+        "imagemSrc": "tenis.svg",
+        "altImagem": "imagem de um traço de um tênis",
+        "titulo": "Tênis"
+      }
+    ]
+  }
+}
