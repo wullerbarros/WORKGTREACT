@@ -44,7 +44,7 @@ function CarouselJ() {
 
   return (
     <section className="bg-[#F5F5F5] flex flex-col items-center justify-center w-full min-h-[681px] relative">
-      <div className="w-full relative rounded-lg shadow-xl pb-12"> 
+      <div className="w-full relative rounded-lg pb-12"> 
         <Carousel autoplay dotPosition="bottom">
           {slidesCarousel.map((slide, index) => (
             <div key={index}>
