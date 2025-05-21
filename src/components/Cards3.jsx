@@ -27,7 +27,7 @@ const produtos = [
 ]
 
 
-const Cards = ({quantidade}) => {
+const Cards3 = ({quantidade}) => {
   console.log(quantidade)
   const newProdutos = produtos.slice(0, quantidade)
   return (
@@ -55,3 +55,5 @@ const Cards = ({quantidade}) => {
     </>
   )
 }
+
+export default Cards3
