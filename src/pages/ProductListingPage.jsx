@@ -1,10 +1,11 @@
 import React from "react";
 
+
 const ProductListingPage = () => {
   return (
     <>
       <Filter />
-      <Card quantidade={16}/>
+      <Cards2 quantidade={16}/>
     </>
   );
 };
