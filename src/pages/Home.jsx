@@ -8,8 +8,7 @@ const Home = () => {
   return (
     <>
     <CarouselJ />
-    <Section />
-    <BodyJ />
+    <Section />  
     </>    
   )
 }
