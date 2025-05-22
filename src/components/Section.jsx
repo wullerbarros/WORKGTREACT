@@ -62,8 +62,8 @@ function Section () {
   return (
     <>
     {/* // colecao em destaque 1 */}
-    <h2 className='ml-[60px] pt-[38px] text-[24px] text-[#474747] !font-bold leading-[38px] !font-[inter]'>Coleções em destaque</h2>
-    <div className='flex flex-row gap-[12px] mt-[20px] ml-[60px]'>
+    <h2 className='ml-[100px] pt-[38px] text-[24px] text-[#474747] !font-bold !leading-[38px] !font-[inter]'>Coleções em destaque</h2>
+    <div className='flex flex-row gap-[12px] mt-[20px] ml-[100px]'>
         {destaqueCardsData.map((cardData, index) => (
             <div
             key={index}
@@ -72,7 +72,7 @@ function Section () {
                 <p className="bg-[#E7FF86] h-[32px] w-[96px] text-center flex items-center justify-center rounded-[29px] text-[14px] mt-[34px] mb-[185px] mr-[279px] ml-[30px] font-bold text-[#474747]">
                     {cardData.desconto}
                 </p>
-                <h2 className="!font-bold text-[32px] !font-[inter] leading-[36px] w-[172px] h-[72px] text-[#1F1F1F] mt-[76px] mb-[76px] mr-[203px] ml-[30px]">
+                <h2 className="!font-bold text-[32px] !font-[inter] !leading-[36px] w-[172px] h-[72px] text-[#1F1F1F] mt-[76px] mb-[76px] mr-[203px] ml-[30px]">
                     {cardData.titulo}
                 </h2>
                 <img
@@ -87,7 +87,8 @@ function Section () {
         ))}
     </div>
     {/* // colecao em destaque 2 */}
-    <div className="flex gap-4 flex-wrap"> 
+    <h2 className='justify-center text-center pt-[100px] text-[24px] text-[#474747] !font-bold !leading-[38px] !font-[inter]'>Coleções em destaque</h2>
+    <div className="flex gap-4 flex-wrap justify-center mt-[20px]"> 
     {colecaoDestaque.map((item, idx) => (
       <div key={idx} className="flex flex-col items-center gap-[10px]">
         <div className="bg-white w-[104px] h-[104px] p-[20px] rounded-[150px] flex items-center justify-center">
@@ -98,7 +99,7 @@ function Section () {
           />
         </div>
         <div>
-          <h2 className="font-[inter] font-bold text-[14px] text-[#474747] hover:text-[#C92071] transition-colors duration-300">
+          <h2 className="!font-[inter] !font-bold text-[14px] text-[#474747] hover:text-[#C92071] transition-colors duration-300">
             {item.titulo}
           </h2>
         </div>

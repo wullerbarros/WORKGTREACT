@@ -4,11 +4,12 @@ import CarouselJ from '../components/CarouselJ'
 import BodyJ from '../components/BodyJ'
 import Section from '../components/Section'
 
+
 const Home = () => {
   return (
     <>
     <CarouselJ />
-    <Section />  
+    <Section />    
     </>    
   )
 }

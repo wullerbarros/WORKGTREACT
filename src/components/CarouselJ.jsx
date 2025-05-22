@@ -50,10 +50,10 @@ function CarouselJ() {
             <div key={index}>
               <div className="flex min-h-[640px] items-center">
                 <div className="w-1/2 flex flex-col justify-center pl-[100px] pr-[80px]">
-                  <p className="text-[#F6AA1C] !font-bold tracking-widest text-base !font-[inter]">
+                  <p className="text-[#F6AA1C] !font-bold !tracking-widest text-base !font-[inter]">
                     {slide.title}
                   </p>
-                  <h2 className="!text-[64px] text-[#1F1F1F] !font-extrabold !font-[inter] tracking-[1px] leading-[66px]">
+                  <h2 className="!text-[64px] text-[#1F1F1F] !font-extrabold !font-[inter] !tracking-[1px] !leading-[66px]">
                     <div>Queima de</div>
                     <div className="flex items-center">
                       stoque Nike
@@ -64,10 +64,10 @@ function CarouselJ() {
                       />
                     </div>
                   </h2>
-                  <p className="text-[#474747] !text-[18px] !font-normal tracking-[0.75px] !font-[inter] leading-[34px] pr-[10px] mt-[20px]">
+                  <p className="text-[#474747] !text-[18px] !font-normal !tracking-[0.75px] !font-[inter] !leading-[34px] pr-[10px] mt-[20px]">
                     {slide.description}
                   </p>
-                  <button className="bg-[#C92071] !text-[#F5F5F5] !font-bold !text-[16px] !font-[inter] mt-[40px] leading-[24px] tracking-[0.75px] h-[48px] w-[220px] rounded-[8px] cursor-pointer hover:bg-[#FF69B4] transition duration-300 ease-in-out">
+                  <button className="bg-[#C92071] !text-[#F5F5F5] !font-bold !text-[16px] !font-[inter] mt-[40px] !leading-[24px] !tracking-[0.75px] h-[48px] w-[220px] rounded-[8px] cursor-pointer hover:bg-[#FF69B4] transition duration-300 ease-in-out">
                     {slide.buttonText}
                   </button>
                 </div>

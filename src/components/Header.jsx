@@ -3,13 +3,14 @@ import carrinho from '../assets/img/img-header/carrinho.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import Logo from './Logo';
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
   return (
     <header className="bg-white !font-[inter]">
       <div className="flex justify-between items-center h-[100px] px-10">
-        <Logo / >
+        <Logo color = "rosa"/ >
         <div className="relative flex items-center">
           <input
             type="text"
@@ -21,9 +22,12 @@ const Header = () => {
           </button>
         </div>
         <div className="flex items-center gap-5">
-          <a href="#" className="text-[#4F4F4F] text-[16px] font-medium hover:underline cursor-pointer">
+          <Link
+            to="/Cadastro"
+            className="text-[#4F4F4F] text-[16px] font-medium hover:underline cursor-pointer"
+          >
             Cadastre-se
-          </a>
+          </Link>
           <button className="bg-[#C92071] w-[114px] h-[40px] rounded-[8px] font-bold !text-[14px] !text-[#F7F7FC] !font-[inter] mt-[44px] leading-[22px] tracking-[0.75px] cursor-pointer hover:bg-[#FF69B4] transition ease-in-out duration-300">
             Entrar
           </button>
