@@ -1,13 +1,11 @@
 import './App.css'
-import FilterGroup from './components/FilterGroup';
-import FilterPanel from './components/FilterGroup'
 import { useState } from 'react'
-
+import FilterGroup from "./components/FilterGroup";
 
 const produtosExemplo = [
   { nome: "Tênis A", marca: "Adiddas", categoria: "Esporte e lazer", genero: "Masculino", estado: "Novo" },
   { nome: "Tênis B", marca: "Nike", categoria: "Casual", genero: "Feminino", estado: "Usado" },
-  // ...mais produtos
+  { nome: "Tênis C", marca: "Puma", categoria: "Corrida", genero: "Unisex", estado: "Novo" },
 ];
 
 const App = () => {
@@ -25,8 +23,8 @@ const App = () => {
   return (
     <div className="flex">
       <FilterGroup onApply={setFiltrosAtivos} />
-      <div className="w-[308px] h-[720px] mt- [332px] left-[100px] rounded-sm gap-20">
-        <h1 className="text-xl font-bold mb-4 [#991956]">Produtos</h1>
+      <div className="ml-[320px] p-6 w-full">
+        <h1 className="text-xl font-bold mb-4 text-[#991956]">Produtos</h1>
         <ul>
           {produtosFiltrados.map((produto, idx) => (
             <li key={idx} className="border p-2 mb-2 rounded">
@@ -38,6 +36,7 @@ const App = () => {
     </div>
   );
 };
+
 
 
 

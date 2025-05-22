@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import FilterSection from "./FilterSection";
 
 const FilterGroup = ({ onApply }) => {
   const [filters, setFilters] = useState({
@@ -35,12 +36,12 @@ const FilterGroup = ({ onApply }) => {
   return (
     <div className="p-[30px] border w-[308px] bg-white fixed left-0 top-0 h-full shadow-xl z-10 overflow-y-auto">
       <div className="flex justify-between items-center mb-2">
-        <h2 className=" text-base font-semibold text-dark-gray-2 ">Filtrar por</h2>
+        <h2 className="text-base font-semibold">Filtrar por</h2>
         <button className="text-xl">×</button>
       </div>
-      <hr className="mb-4 " />
+      <hr className="mb-4" />
 
-      <FilterSection title="Marka" options={marcas} selected={filters.marca} onToggle={(val) => toggleCheckbox("marca", val)} />
+      <FilterSection title="Marca" options={marcas} selected={filters.marca} onToggle={(val) => toggleCheckbox("marca", val)} />
       <FilterSection title="Categoria" options={categorias} selected={filters.categoria} onToggle={(val) => toggleCheckbox("categoria", val)} />
       <FilterSection title="Gênero" options={generos} selected={filters.genero} onToggle={(val) => toggleCheckbox("genero", val)} />
 
@@ -54,7 +55,7 @@ const FilterGroup = ({ onApply }) => {
               value={estado}
               checked={filters.estado === estado}
               onChange={() => handleRadioChange(estado)}
-              className=" accent-[#991956] w-6 h-6"
+              className="accent-[#991956] w-6 h-6"
             />
             <span>{estado}</span>
           </label>
@@ -67,22 +68,5 @@ const FilterGroup = ({ onApply }) => {
     </div>
   );
 };
-
-const FilterSection = ({ title, options, selected, onToggle }) => (
-  <div className="mb-4">
-    <h3 className="font-medium mb-1">{title}</h3>
-    {options.map((item) => (
-      <label key={item} className="flex items-center space-x-2 mb-1">
-        <input
-          type="checkbox"
-          checked={selected.includes(item)}
-          onChange={() => onToggle(item)}
-          className="accent-[#991956] w-6 h-6"
-        />
-        <span>{item}</span>
-      </label>
-    ))}
-  </div>
-);
 
 export default FilterGroup;
