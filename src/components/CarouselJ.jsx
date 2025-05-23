@@ -64,10 +64,10 @@ function CarouselJ() {
                       />
                     </div>
                   </h2>
-                  <p className="text-[#474747] !text-[18px] !font-normal !tracking-[0.75px] !font-[inter] !leading-[34px] pr-[10px] mt-[20px]">
+                  <p className="text-[#474747]  !text-[18px] !font-normal !tracking-[0.75px] !font-inter !leading-[34px] pr-[10px] mt-[20px]">
                     {slide.description}
                   </p>
-                  <button className="bg-[#C92071] !text-[#F5F5F5] !font-bold !text-[16px] !font-[inter] mt-[40px] !leading-[24px] !tracking-[0.75px] h-[48px] w-[220px] rounded-[8px] cursor-pointer hover:bg-[#FF69B4] transition duration-300 ease-in-out">
+                  <button className="bg-[#C92071] border  !text-[#F5F5F5] !font-bold !text-[16px] !font-[inter] mt-[40px] !leading-[24px] !tracking-[0.75px] h-[48px] w-[220px] rounded-[8px] cursor-pointer hover:bg-[#FF69B4] transition duration-300 ease-in-out">
                     {slide.buttonText}
                   </button>
                 </div>
