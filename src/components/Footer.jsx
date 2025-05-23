@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../assets/logo.png'
+
 
 const Footer = () => {
   return (
@@ -9,10 +9,7 @@ const Footer = () => {
         <div className="container mx-auto grid md:grid-cols-4 gap-8 px-4">
             <div>
                 <div className="flex items-center ">
-                   
-
-                    <img src={logo} alt=""/>
-             
+                <Logo / >             
                 </div>
                 <p className="text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
                 <div className="flex space-x-4">
