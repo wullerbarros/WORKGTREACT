@@ -5,6 +5,8 @@ import NotFound from '../pages/NotFound.jsx'
 import ProductListingPage from '../pages/ProductListingPage.jsx'
 import ProductViewPage from '../pages/ProductViewPage.jsx'
 import Layout from '../components/Layout.jsx'
+import Cadastro from '../pages/Cadastro.jsx'
+
 
 const Rotas = () => {
     return (
@@ -15,6 +17,7 @@ const Rotas = () => {
                     <Route path='/product/:id' element={<ProductViewPage />} />
                     <Route path='/produtos' element={<ProductListingPage />} />
                     <Route path='*' element={<NotFound />} />
+                    <Route path="/Cadastro" element={<Cadastro></Cadastro>}></Route>        
                 </Route>
             </Routes>
         </BrowserRouter>

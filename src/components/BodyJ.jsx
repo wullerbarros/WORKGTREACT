@@ -41,7 +41,7 @@ return (
           <img
             src={item.imagemSrc}
             alt={item.altImagem}
-            className="w-[64px] h-[63.92px] hover:scale-110 transition-transform duration-300 cursor-pointer"
+            className="w-[64px] h-[63.92px] hover:scale-110 hover:fill-pink-500 transition-transform duration-300 cursor-pointer"
           />
         </div>
         <div>
