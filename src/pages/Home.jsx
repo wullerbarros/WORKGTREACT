@@ -1,16 +1,11 @@
 import React from 'react'
-import Header from '../components/Header'
-import CarouselJ from '../components/CarouselJ'
-import BodyJ from '../components/BodyJ'
-import Section from '../components/Section'
+import OfertaEspecial from '../components/OfertaEspecial'
+
 
 const Home = () => {
   return (
-    <>
-    <CarouselJ />
-    <Section />
-    <BodyJ />
-    </>    
+    <OfertaEspecial/>
+    
   )
 }
 
