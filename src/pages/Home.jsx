@@ -1,8 +1,11 @@
 import React from 'react'
+import OfertaEspecial from '../components/OfertaEspecial'
+
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <OfertaEspecial/>
+    
   )
 }
 
