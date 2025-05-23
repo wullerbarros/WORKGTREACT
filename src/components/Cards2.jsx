@@ -1,4 +1,3 @@
-import React from 'react'
 import tenis from "../assets/tenis.jpg"
 
 
@@ -6,6 +5,81 @@ import tenis from "../assets/tenis.jpg"
 const produtos = [
   {
       produto: "K-Swiss V8 - Masculino" ,
+      categoria: "Tenis",
+      preco: 100,
+      img: tenis
+  },{
+      produto: "K-Swiss V8 - Masculino",
+      categoria: "Tenis",
+      preco: 110,
+      img: tenis
+  },{
+      produto: "K-Swiss V8 - Masculino",
+      categoria: "Tenis",
+      preco: 120,
+      img: tenis
+  },{
+      produto: "K-Swiss V8 - Masculino",
+      categoria: "Tenis",
+      preco: 130,
+      img: tenis
+  },{
+      produto: "K-Swiss V8 - Masculino",
+      categoria: "Tenis",
+      preco: 140,
+      img: tenis
+  },{
+      produto: "K-Swiss V8 - Masculino",
+      categoria: "Tenis",
+      preco: 140,
+      img: tenis
+  },{
+      produto: "K-Swiss V8 - Masculino",
+      categoria: "Tenis",
+      preco: 140,
+      img: tenis
+  },{
+      produto: "K-Swiss V8 - Masculino",
+      categoria: "Tenis",
+      preco: 150,
+      img: tenis
+  },{
+      produto: "K-Swiss V8 - Masculino",
+      categoria: "Tenis",
+      preco: 160,
+      img: tenis
+  },{
+      produto: "K-Swiss V8 - Masculino",
+      categoria: "Tenis",
+      preco: 160,
+      img: tenis
+  },{
+      produto: "K-Swiss V8 - Masculino",
+      categoria: "Tenis",
+      preco: 170,
+      img: tenis
+  },{
+      produto: "K-Swiss V8 - Masculino",
+      categoria: "Tenis",
+      preco: 180,
+      img: tenis
+  },{
+      produto: "K-Swiss V8 - Masculino",
+      categoria: "Tenis",
+      preco: 10,
+      img: tenis
+  },{
+      produto: "K-Swiss V8 - Masculino",
+      categoria: "Tenis",
+      preco: 10,
+      img: tenis
+  },{
+      produto: "K-Swiss V8 - Masculino",
+      categoria: "Tenis",
+      preco: 190,
+      img: tenis
+  },{
+      produto: "K-Swiss V8 - Masculino",
       categoria: "Tenis",
       preco: 100,
       img: tenis
@@ -47,17 +121,12 @@ const produtos = [
   },
 ]
 
-
-const Cards = ({quantidade}) => {
+const Cards2 = ({quantidade}) => {
   console.log(quantidade)
   const newProdutos = produtos.slice(0, quantidade)
   return (
     <>
     <section className="ml-[100px] mr-[150px] p-20 bg-[#F9F8FE] ">
-            <div className="flex justify-between items-center">
-                <h1 className="font-bold text-2xl mb-5 text-gray-600">Produtos em alta</h1>
-                <a className="text-xs text-red-500 mr-10">Ver todos →</a>
-            </div>
               <ul className="flex flex-wrap gap-[24px] ">
                 {newProdutos.map((item)=>(
                     <li className=" p-2 w-[292px] h-[439]">
@@ -77,4 +146,4 @@ const Cards = ({quantidade}) => {
   )
 }
 
-export default Cards
+export default Cards2

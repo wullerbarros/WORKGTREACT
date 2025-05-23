@@ -1,8 +1,9 @@
 import React from 'react'
 
+
 const productViewPage = () => {
   return (
-    <div>productViewPage</div>
+    <Cards3 quantidade={4}/>
   )
 }
 
