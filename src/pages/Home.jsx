@@ -12,11 +12,7 @@ const Home = () => {
   return (
     <>
     <CarouselJ />
-    <Destaque /> 
-    <Cards quantidade={8}/>
-    {/* <Cards2 quantidade={16}/>
-    <Cards3 quantidade={4}/> */}
-    <OfertaEspecial />
+    <Section />
     </>
   )
 }
