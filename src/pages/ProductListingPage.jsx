@@ -1,13 +1,13 @@
 import React from "react";
 import Aside from "../components/Aside";
-import Cards2 from "../components/Cards2";
+import Cards from "../components/Cards";
 
 
 const ProductListingPage = () => {
   return (
     <>
       <Aside />
-      <Cards2 quantidade={16}/>
+      <Cards quantidade={8}/>
     </>
   );
 };

@@ -1,13 +1,13 @@
 import React from 'react'
 import Destaque from './Destaque'
-import Cards from './Cards'
+import Cards2 from './Cards2'
 import OfertaEspecial from './OfertaEspecial'
 
 const Section = () => {
   return (
     <>
     <Destaque />
-    <Cards quantidade={8}/>
+    <Cards2 quantidade={8}/>
     <OfertaEspecial />
     </>
   )

@@ -23,7 +23,8 @@ const Rotas = () => {
                     <Route path='/Aside' element={<Aside />} />
                     <Route path='/Cards2' element={<Cards2 quantidade={16} />} />
                     <Route path="/Cadastro" element={<Cadastro></Cadastro>}></Route>   
-                    <Route path="/CarouselSwiper" element={<CarouselSwiper></CarouselSwiper>}></Route>     
+                    <Route path="/CarouselSwiper" element={<CarouselSwiper></CarouselSwiper>}></Route>
+                                         
                 </Route>
             </Routes>
         </BrowserRouter>
