@@ -38,8 +38,12 @@ const Header = () => {
       </div>
       <nav className="h-[50px] items-left flex">
         <ul className="flex gap-10 text-[#4F4F4F] text-[16px] font-medium items-center justify-center h-full mx-[40px]">
-          <li className="hover:underline hover:text-[#C92071] cursor-pointer">Home</li>
-          <li className="hover:underline hover:text-[#C92071] cursor-pointer">Produtos</li>
+          <li>
+            <Link to="/"className="hover:underline hover:text-[#C92071] cursor-pointer">Home</Link>
+            </li>
+          <li>
+            <Link to="/produtos" className="hover:underline hover:text-[#C92071] cursor-pointer">Produtos
+            </Link></li>
           <li className="hover:underline hover:text-[#C92071] cursor-pointer">Categorias</li>
           <li className="hover:underline hover:text-[#C92071] cursor-pointer">Meus Pedidos</li>
         </ul>
