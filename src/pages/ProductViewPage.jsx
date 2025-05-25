@@ -12,7 +12,7 @@ const ProductViewPage = () => {
   return (
     <div className='flex flex-col items-center justify-center w-full'>
       <div className="w-full max-w-6xl mt-8">
-        <p className="text-gray-500 text-sm mb-6 mr-[10px]">
+        <p className="text-[#474747] text-sm mb-6 mr-[10px]">
           Home / Produtos / Tênis / Nike / Tênis Nike Revolution 6 Next Nature Masculino
         </p>
         <div className="flex flex-row w-full gap-[40px]">
@@ -69,6 +69,7 @@ const ProductViewPage = () => {
       ))}
     </div>      
            </div>
+           <button className='w-[220px] h-[48px] rounded-[8px] bg-[#FFB31F] !text-[#F5F5F5] !font-[inter] !font-bold text-[16px] leading-[24px] tracking-[0.75px] !mt-[27px] !ml-[40px] hover:bg-[#f7d987] transition duration-300 ease-in-out cursor-pointer'>COMPRAR</button>
             {/* Adicione mais detalhes do produto aqui se quiser */}
           </div>
         </div>
