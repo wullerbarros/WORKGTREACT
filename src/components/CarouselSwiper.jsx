@@ -3,11 +3,18 @@ import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 import { Virtual, Navigation, Thumbs } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import tenisCarousel from '../assets/img/img-ProductViewPage/tenisCarousel.svg';
 
-export default () => {
+const CarouselSwiper = ({ activeIndex = 0 }) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const swiperRef = useRef(null);
+
+  useEffect(() => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slideTo(activeIndex);
+    }
+  }, [activeIndex]);
 
   const slidesData = [
     { Image: tenisCarousel },
@@ -28,6 +35,7 @@ export default () => {
   return (
     <div>
       <Swiper
+        ref={swiperRef}
         modules={[Virtual, Navigation, Thumbs]}
         spaceBetween={2} // Espaçamento entre slides
         slidesPerView={1} // número de slides visíveis
@@ -70,3 +78,5 @@ export default () => {
     </div>
   );
 };
+
+export default CarouselSwiper;
