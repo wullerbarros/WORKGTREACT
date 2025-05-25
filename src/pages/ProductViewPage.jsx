@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom'
 
 const ProductViewPage = () => {
   const [activeColorIndex, setActiveColorIndex] = useState(0);
+  const tamanhos = [39, 40, 41, 42, 43];
+  const [tamanhoAtivo, setTamanhoAtivo] = useState(41); // Exemplo, pode ser um state
 
   return (
     <div className='flex flex-col items-center justify-center w-full'>
@@ -38,15 +40,25 @@ const ProductViewPage = () => {
             <div className='mt-[30px] ml-[40px] mr-[60px]'>
               <h3 className='!font-[inter] !font-bold text-[#8F8F8F] text-[14px] leading-[22px] tracking-[0.75px]'>Tamanho</h3>
               <div className='flex flex-row gap-[10px]'>
-                <div className='w-[48px] h-[48px] rounded-[4px] border  border-[#CCCCCC] text-[#474747] !font-[inter] !font-bold text-[16px] leading-[24px] tracking-[0.75px] flex items-center justify-center hover:scale-110 cursor-pointer transition-discrete'>39</div>
-                <div className='w-[48px] h-[48px] rounded-[4px] border  border-[#CCCCCC] text-[#474747] !font-[inter] !font-bold text-[16px] leading-[24px] tracking-[0.75px] flex items-center justify-center hover:scale-110 cursor-pointer transition-discrete'>40</div>
-                <div className='w-[48px] h-[48px] rounded-[4px] border border-[#CCCCCC] bg-[#C92071] text-[#FFFFFF] !font-[inter] !font-bold text-[16px] leading-[24px] tracking-[0.75px] flex items-center justify-center hover:scale-110 cursor-pointer transition-discrete'>41</div>
-                <div className='w-[48px] h-[48px] rounded-[4px] border  border-[#CCCCCC] text-[#474747] !font-[inter] !font-bold text-[16px] leading-[24px] tracking-[0.75px] flex items-center justify-center hover:scale-110 cursor-pointer transition-discrete'>42</div>
-                <div className='w-[48px] h-[48px] rounded-[4px] border  border-[#CCCCCC] text-[#474747] !font-[inter] !font-bold text-[16px] leading-[24px] tracking-[0.75px] flex items-center justify-center hover:scale-110 cursor-pointer transition-discrete'>43</div>
+                {tamanhos.map((tamanho) => (
+                  <div
+                    key={tamanho}
+                    className={
+                      `w-[48px] h-[48px] rounded-[4px] border border-gray-400/40 
+                      flex items-center justify-center 
+                      !font-[inter] !font-bold text-[16px] leading-[24px] tracking-[0.75px] 
+                      hover:scale-110 cursor-pointer transition-discrete
+                      ${tamanhoAtivo === tamanho ? 'bg-[#C92071] text-white' : 'text-[#474747]'}`
+                    }
+                    onClick={() => setTamanhoAtivo(tamanho)} // descomente para selecionar tamanho
+                  >
+                    {tamanho}
+                  </div>
+                ))}
               </div>      
            </div>
            <div className='mt-[30px] ml-[40px] mr-[60px]'>
-              <h3 className='!font-[inter] !font-bold text-[#8F8F8F] text-[14px] leading-[22px] tracking-[0.75px]'>Tamanho</h3>
+              <h3 className='!font-[inter] !font-bold text-[#8F8F8F] text-[14px] leading-[22px] tracking-[0.75px]'>Cores</h3>
                 <div className='flex flex-row gap-[10px]'>
       {['bg-blue-100', 'bg-pink-100', 'bg-green-100', 'bg-yellow-100', 'bg-purple-100'].map((color, idx) => (
         <div
