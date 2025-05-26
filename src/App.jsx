@@ -1,6 +1,7 @@
 import './App.css'
 import { useState } from 'react'
 import FilterGroup from "./components/FilterGroup";
+import ProductListingPage from './pages/ProductListingPage';
 
 const produtosExemplo = [
   { nome: "Tênis A", marca: "Adiddas", categoria: "Esporte e lazer", genero: "Masculino", estado: "Novo" },
@@ -9,30 +10,30 @@ const produtosExemplo = [
 ];
 
 const App = () => {
-  const [filtrosAtivos, setFiltrosAtivos] = useState(null);
+  const [filtrosAtivos, setFiltrosAtivos] = useState({
+    marca: [],
+    categoria: [],
+    genero: [],
+    estado: ""
+  });
 
-  const produtosFiltrados = filtrosAtivos
-    ? produtosExemplo.filter((produto) =>
-        filtrosAtivos.marca.includes(produto.marca) &&
-        filtrosAtivos.categoria.includes(produto.categoria) &&
-        filtrosAtivos.genero.includes(produto.genero) &&
-        produto.estado === filtrosAtivos.estado
-      )
-    : produtosExemplo;
+  // Filtrar produtos baseado nos filtrosAtivos
+  const produtosFiltrados = produtosExemplo.filter((produto) => {
+    const marcaMatch = filtrosAtivos.marca.length === 0 || filtrosAtivos.marca.includes(produto.marca);
+    const categoriaMatch = filtrosAtivos.categoria.length === 0 || filtrosAtivos.categoria.includes(produto.categoria);
+    const generoMatch = filtrosAtivos.genero.length === 0 || filtrosAtivos.genero.includes(produto.genero);
+    const estadoMatch = !filtrosAtivos.estado || produto.estado === filtrosAtivos.estado;
+
+    return marcaMatch && categoriaMatch && generoMatch && estadoMatch;
+  });
 
   return (
-    <div className="flex">
-      <FilterGroup onApply={setFiltrosAtivos} />
-      <div className="ml-[320px] p-6 w-full">
-        <h1 className="text-xl font-bold mb-4 text-[#991956]">Produtos</h1>
-        <ul>
-          {produtosFiltrados.map((produto, idx) => (
-            <li key={idx} className="border p-2 mb-2 rounded">
-              {produto.nome} - {produto.marca} - {produto.categoria} - {produto.genero} - {produto.estado}
-            </li>
-          ))}
-        </ul>
+    <div className="min-h-screen">
+      <div className="p-6 w-full">
+        <ProductListingPage produtos={produtosFiltrados} />
       </div>
+      <FilterGroup onApply={setFiltrosAtivos} />
+
     </div>
   );
 };
