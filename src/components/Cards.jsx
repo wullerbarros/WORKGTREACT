@@ -44,6 +44,56 @@ const produtos = [
       categoria: "Tenis",
       preco: 100,
       img: tenis
+  },{
+      produto: "K-Swiss V8 - Masculino",
+      categoria: "Tenis",
+      preco: 100,
+      img: tenis
+  },{
+      produto: "K-Swiss V8 - Masculino",
+      categoria: "Tenis",
+      preco: 100,
+      img: tenis
+  },{
+      produto: "K-Swiss V8 - Masculino",
+      categoria: "Tenis",
+      preco: 100,
+      img: tenis
+  },{
+      produto: "K-Swiss V8 - Masculino",
+      categoria: "Tenis",
+      preco: 100,
+      img: tenis
+  },{
+      produto: "K-Swiss V8 - Masculino",
+      categoria: "Tenis",
+      preco: 100,
+      img: tenis
+  },{
+      produto: "K-Swiss V8 - Masculino",
+      categoria: "Tenis",
+      preco: 100,
+      img: tenis
+  },{
+      produto: "K-Swiss V8 - Masculino",
+      categoria: "Tenis",
+      preco: 100,
+      img: tenis
+  },{
+      produto: "K-Swiss V8 - Masculino",
+      categoria: "Tenis",
+      preco: 100,
+      img: tenis
+  },{
+      produto: "K-Swiss V8 - Masculino",
+      categoria: "Tenis",
+      preco: 100,
+      img: tenis
+  },{
+      produto: "K-Swiss V8 - Masculino",
+      categoria: "Tenis",
+      preco: 100,
+      img: tenis
   },
 ]
 
