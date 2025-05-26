@@ -25,11 +25,11 @@ const CarouselSwiper = ({ activeIndex = 0 }) => {
   ];
 
   const bgColors = [
-    "bg-blue-100",
-    "bg-pink-100",
-    "bg-green-100",
-    "bg-yellow-100",
-    "bg-purple-100"
+    "bg-[#E2E3FF]",
+    "bg-[#FFE8BC]",
+    "bg-[#FFC0BC]",
+    "bg-[#DEC699]",
+    "bg-[#E8DFCF]"
   ];
 
   return (
