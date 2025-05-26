@@ -115,7 +115,7 @@ const Cards = ({quantidade, titulo}) => {
                             <img className='mt-8' src={item.img} alt={item.produto} />
                         </div>
                         <div>
-                            <h2 className='text-xs text-gray-500 font-sans'>{item.categoria}</h2>
+                            <h2 className='text-[12px] text-gray-500 font-sans'>{item.categoria}</h2>
                             <h2 className="text-gray-700 font-sans font-inter text-[24px]">{item.produto}</h2>
                             <p className='font-inter font-bold text-[24px]'>${item.preco}</p>
                         </div>
