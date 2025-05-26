@@ -5,7 +5,7 @@ import Cards from "../components/Cards";
 const ProductListingPage = () => {
   return (
     <>
-      <Filter />
+      {/* <Filter /> */}
       <Cards quantidade={16}/>
     </>
   );

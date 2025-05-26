@@ -6,7 +6,7 @@ import Cards from '../components/Cards'
 const Home = () => {
   return (
     <>
-    <Cards quantidade={8} titulo={Produtos em alta}/>
+    <Cards quantidade={8} titulo="Produtos em alta"/>
     </>
   )
 }
