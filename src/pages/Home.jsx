@@ -8,8 +8,6 @@ const Home = () => {
   return (
     <>
     <Cards quantidade={8}/>
-    <Cards2 quantidade={16}/>
-    <Cards3 quantidade={4}/>
     </>
   )
 }
