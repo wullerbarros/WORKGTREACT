@@ -41,7 +41,7 @@ const CarouselSwiper = ({ activeIndex = 0 }) => {
         slidesPerView={1} // número de slides visíveis
         navigation
         thumbs={{ swiper: thumbsSwiper }}
-        className="max-w-[650px] mx-auto" // largura máxima e centralizado
+        className="max-w-[650px] mx-auto rounded-[4px]" // largura máxima e centralizado
       >
         {slidesData.map((slide, index) => (
           <SwiperSlide key={index} virtualIndex={index}>

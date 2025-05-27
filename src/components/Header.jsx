@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <>
       <header className="bg-white !font-[inter]">
-        <div className="flex justify-between items-center h-[100px] px-10">
+        <div className="flex justify-between items-center h-[100px] px-[100px]">
           <Logo color = "rosa"/ >
           <div className="relative flex items-center">
             <input
@@ -23,7 +23,7 @@ const Header = () => {
               <FontAwesomeIcon icon={faMagnifyingGlass} className="text-gray-500 cursor-pointer" />
             </button>
           </div>
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-5 justify-between">
             <Link
               to="/Cadastro"
               className="text-[#4F4F4F] text-[16px] font-medium hover:underline cursor-pointer"
@@ -36,12 +36,12 @@ const Header = () => {
           </div>
           <div className="flex items-center">
             <Link to="/product/:id">
-              <img src={carrinho} alt="Carrinho de compras" className="w-[30px] h-[30px] cursor-pointer" />
+              <img src={carrinho} alt="Carrinho de compras" className="w-[30px] h-[30px] !items-end cursor-pointer" />
             </Link>
           </div>
         </div>
-        <nav className="h-[50px] items-left flex">
-          <ul className="flex gap-10 text-[#4F4F4F] text-[16px] font-medium items-center justify-center h-full mx-[40px]">
+        <nav className="h-[50px] items-left flex ml-[100px]">
+          <ul className="flex gap-10 text-[#4F4F4F] text-[16px] font-medium items-center justify-center h-full">
             <li>
               <Link to="/"className="hover:underline hover:text-[#C92071] cursor-pointer">Home</Link>
               </li>
