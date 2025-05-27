@@ -6,7 +6,7 @@ const ProductListingPage = () => {
   return (
     <>
       {/* <Filter /> */}
-      <Cards quantidade={16}/>
+      <Cards quantidade={15}/>
     </>
   );
 };

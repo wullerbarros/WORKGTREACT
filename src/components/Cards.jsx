@@ -111,8 +111,8 @@ const Cards = ({quantidade, titulo}) => {
             <ul className="flex flex-wrap gap-[24px]">
                 {newProdutos.map((item)=>(
                     <li className=" p-2 w-[292px] h-[439px]">
-                        <div className="border border-[#ccc] bg-white  rounded-[4px] p-5 border-gray-30 shadow-sm w-[292px] h-[321px] ">
-                            <img className='mt-8' src={item.img} alt={item.produto} />
+                        <div className=" bg-white  rounded-[4px]  border-gray-30 shadow-sm w-[292px] h-[321px] ">
+                            <img src={item.img} alt={item.produto} />
                         </div>
                         <div>
                             <h2 className='text-[12px] text-gray-500 font-sans'>{item.categoria}</h2>
