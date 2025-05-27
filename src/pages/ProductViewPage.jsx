@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import CarouselSwiper from "../components/CarouselSwiper.jsx";
 import classificacao from "../assets/img/img-ProductViewPage/Stars.svg";
 import notaAvaliacao from "../assets/img/img-ProductViewPage/Group 1103.svg";
+import Cards2 from "../components/Cards2.jsx";
 import { Link } from "react-router-dom";
 
 const ProductViewPage = () => {
@@ -114,6 +115,7 @@ const ProductViewPage = () => {
           </div>
         </div>
       </div>
+      <Cards2 />
     </div>
   );
 };
