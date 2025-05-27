@@ -25,11 +25,11 @@ const CarouselSwiper = ({ activeIndex = 0 }) => {
   ];
 
   const bgColors = [
-    "bg-blue-100",
-    "bg-pink-100",
-    "bg-green-100",
-    "bg-yellow-100",
-    "bg-purple-100"
+    "bg-[#E2E3FF]",
+    "bg-[#FFE8BC]",
+    "bg-[#FFC0BC]",
+    "bg-[#DEC699]",
+    "bg-[#E8DFCF]"
   ];
 
   return (
@@ -41,7 +41,7 @@ const CarouselSwiper = ({ activeIndex = 0 }) => {
         slidesPerView={1} // número de slides visíveis
         navigation
         thumbs={{ swiper: thumbsSwiper }}
-        className="max-w-[650px] mx-auto" // largura máxima e centralizado
+        className="max-w-[650px] mx-auto rounded-[4px]" // largura máxima e centralizado
       >
         {slidesData.map((slide, index) => (
           <SwiperSlide key={index} virtualIndex={index}>

@@ -14,8 +14,7 @@ function CadastroPage() {
       {/* Coluna da Imagem */}
       <div
         className="hidden md:flex flex-1 mt-[66px] mr-[150px] rounded-[4px] bg-cover bg-center text-white text-4xl text-center p-8"
-        >
-        {/* Substitua pela sua imagem ou adicione um overlay */}
+        >       
         <img className='w-full h-full' src={tenisLogin} alt="tenis amarelo" />
       </div>     
     </div>
