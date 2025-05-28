@@ -103,9 +103,9 @@ const Cards = ({quantidade, titulo}) => {
   const newProdutos = produtos.slice(0, quantidade)
   return (
     <>
-    <section className="ml-[100px] mr-[150px] p-20 bg-[#F9F8FE] ">
-            { titulo && <div className="flex justify-between items-center">
-                <h1 className="font-bold text-[24px] mb-5 text-gray-600">{titulo}</h1>
+    <section className="p-50 bg-[#F9F8FE]  ">
+            { titulo && <div className="flex justify-between items-center ">
+                <h1 className=" ml-[10px] text-[24px] text-[#474747] !font-bold !leading-[38px] !font-[inter]">{titulo}</h1>
                 <a className=" text-red-500 mr-10 text-[18px]">Ver todos →</a>
             </div>}
             <ul className="flex flex-wrap gap-[24px]">

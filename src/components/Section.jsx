@@ -7,7 +7,7 @@ const Section = () => {
   return (
     <>
     <Destaque />
-    <Cards quantidade={8} className="grid grid-cols-4 mr-[100px] ml-[100px]"/>
+    <Cards quantidade={8} titulo='Produtos em alta'/>
     <OfertaEspecial />
     </>
   )
