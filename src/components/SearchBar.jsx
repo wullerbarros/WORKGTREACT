@@ -57,7 +57,7 @@ const SearchBar = () => {
               className="px-4 py-2 text-gray-700 font-inter hover:bg-gray-100 cursor-pointer"
             >
               <Link
-                to={`/product/${product.id}`}
+                to={`/produtos/`}
                 onClick={() => setSearchTerm("")} 
                 className="block w-full"
               >
