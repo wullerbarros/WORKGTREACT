@@ -3,12 +3,22 @@
 
 
 @theme {
-  --color-primary: [#C92071];
-  --color-secondary: [#4F4F4F];
-  --color-tertiary: [#F2F2F2];
-  --color-quaternary: [#F7F7FC];  
+  --color-primary: #C92071;
+  --color-secondary: #4F4F4F;
+  --color-tertiary: #F2F2F2;
+  --color-quaternary: #F7F7FC;  
   --font-inter: "Inter", "sans-serif";
 }
+
+@layer base {
+  :root {
+    --color-primary: #C92071;
+    --color-secondary: #4F4F4F;
+    --color-tertiary: #F2F2F2;
+    --color-quaternary: #F7F7FC;
+    --font-inter: "Inter", sans-serif;
+  }
+} 
 
 .ant-carousel .slick-dots li {
   

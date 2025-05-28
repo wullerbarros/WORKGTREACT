@@ -6,7 +6,7 @@ import logoBranca from '../assets/img/img-header/logoBranca.svg'
 const Logo = ({color = 'branca'}) => {
   const logoSrc = color === 'rosa' ? logoRosa : logoBranca
   return (
-    <Link to="/"><img src={logoSrc} alt="Logo da Digital College" className="w-[253px] h-[44px] cursor-pointer" /></Link>
+    <Link to="/"><img src={logoSrc} alt="Logo da Digital College" className="w-[253px] h-[44px] cursor-pointer " /></Link>
   )     
 }
 
