@@ -7,7 +7,7 @@ const ProductViewPage = () => {
   return (
     <>
       <ProductView />
-      <Cards quantidade={4} />
+      <Cards quantidade={4} titulo="Produtos relacionados" />
     </>
   );
 };

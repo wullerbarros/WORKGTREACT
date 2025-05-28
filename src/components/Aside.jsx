@@ -23,7 +23,7 @@ const Aside = () => {
   return (
     <div className="flex">
       <FilterGroup onApply={setFiltrosAtivos} />
-      <div className="ml-[320px] p-6 w-full">
+      {/* <div className="ml-[320px] p-6 w-full">
         <h1 className="text-xl font-bold mb-4 text-[#991956]">Produtos</h1>
         <ul>
           {produtosFiltrados.map((produto, idx) => (
@@ -32,7 +32,7 @@ const Aside = () => {
             </li>
           ))}
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 };
