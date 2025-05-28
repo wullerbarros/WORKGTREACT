@@ -7,21 +7,21 @@ const OfertaEspecial = () => {
   return (
     <>
 
-<section className="w-full h-full flex flex-col items-center justify-center">
+<section className="w-[1440px] h-[553px] bg-[#ffff] flex flex-col  justify-center border">
   <div className="grid md:grid-cols-2">
-    <div className="relative">
-      <img src={tenis2} alt="Air Jordan edição de colecionador" className="w-[576px] h-[330px] object-cover" style={{zIndex: "6", position: "absolute"}} />
-      <img src={Ellipse} alt="hdbchjdsh" style={{zIndex: "6", position: "relative"}}/>
+    <div className=" ml-[97px] ">
+      <img src={tenis2} alt="Air Jordan edição de colecionador" className="w-[576px] h-[330px] object-cover mt-[115px]" style={{zIndex: "6", position: "absolute"}} />
+      <img src={Ellipse} alt="hdbchjdsh"  className='relative z-6 ml-[82px] mt-[87px]' style={{zIndex: "6", position: "relative"}}/>
     </div>
-    <div className="p-8">
-      <p className="text-sm text-red-500 font-semibold mb-2">Oferta especial</p>
-      <h2 className="text-3xl font-bold font-i text-gray-800 mb-4">
+    <div className="p-8 w-[589px] mt-[106px]">
+      <p className="text-[12px] text-primary font-bold-200 !font-[inter] mb-2">Oferta especial</p>
+      <h2 className="text-5xl font-bold !font-[inter] text-gray-800 mb-4">
         Air Jordan edição de colecionador
       </h2>
-      <p className="text-gray-600 mb-6">
+      <p className="text-gray-600 mb-6 !font-[inter]">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
       </p>
-      <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded-full">
+      <button className ="bg-[var(--color-primary)] w-[200px] !text-white !font-[inter]  !text-[14px] py-3 px-6 rounded-md mt-[100px]">
         Ver Oferta
       </button>
     </div>
