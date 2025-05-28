@@ -36,8 +36,8 @@ const FilterGroup = ({ onApply }) => {
   return (
     <div className="pt-[120px] ml-[100px]">
       <div className="bg-[#FFFFFF] p-[30px] w-[308px] h-[720px]">
-        <div className="flex justify-between items-center mb-2">
-          <h2 className="text-base w-[85px] h-[24px] font-bold leading-6 tracking-tight font-inter mb-4">Filtrar por</h2>
+        <div className="flex justify-between items-center mb-2 font-bold text-[#474747]">
+          <h2 className="text-[16px] w-[85px] h-[24px] font-bold leading-[0.75px] !font-[inter] tracking-tight mb-4">Filtrar por</h2>
         </div>
         <hr className="w-[248px] border border-[#CCCCCC]"/>
 
@@ -46,7 +46,7 @@ const FilterGroup = ({ onApply }) => {
         <FilterSection title="Gênero" options={generos} selected={filters.genero} onToggle={(val) => toggleCheckbox("genero", val)} />
 
         <div className="mb-4 w-[76px] h-[86px]">
-          <h3 className="w-[52px] h-[22px] font-medium mb-1">Estado</h3>
+          <h3 className="w-[52px] h-[22px] font-medium mb-1 gap-0.5">Estado</h3>
           {estados.map((estado) => (
             <label key={estado} className="flex items-center space-x-2 mb-1">
               <input
@@ -55,7 +55,7 @@ const FilterGroup = ({ onApply }) => {
                 value={estado}
                 checked={filters.estado === estado}
                 onChange={() => handleRadioChange(estado)}
-                className="accent-[#C92071] w-[22px] h-[14px] t-[4px] l-[4px]"
+                className="accent-[#C92071] w-[22px] h-[14px] t-[4px] l-[4px] gap-0.5"
               />
               <span>{estado}</span>
             </label>

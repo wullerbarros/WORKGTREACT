@@ -4,9 +4,9 @@
   };
     return (
         <>
-    <div className="w-full p-4 mt-[232px] [ml-1008px] rounded-sm">
-      <div className="flex items-center justify-between  border-none">
-        Resultados para {props.typeProduct} - {props.qtdProdutos} produtos encontrados
+    <div className="bg-[#F9F8FE] w-full pt-[56px] pl-[100px] pr-[100px]">
+      <div className="flex items-center justify-between border-none !text-[16px] !font-[inter] !font-bold !text-[#474747] leading-[24px] tracking-[0.75px]">
+        Resultados para {props.typeProduct} - {props.qtdProdutos} Tênis - 339 produtos
         <div className='flex px-6 py-2 border gap-2'>
           <label className="block text-[16px] text-[#474747] font-semibold ">
             Ordenar por:
