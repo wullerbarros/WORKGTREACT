@@ -103,15 +103,15 @@ const Cards = ({quantidade, titulo}) => {
   const newProdutos = produtos.slice(0, quantidade)
   return (
     <>
-    <section className="ml-[100px] mr-[150px] p-20 bg-[#F9F8FE] ">
-            { titulo && <div className="flex justify-between items-center">
-                <h1 className="font-bold text-[24px] mb-5 text-gray-600">{titulo}</h1>
-                <a className=" text-red-500 mr-10 text-[18px]">Ver todos →</a>
+    <section className="bg-[#F9F8FE] pt-[123px]">
+            { titulo && <div className="flex justify-between items-center mb-[20px]">
+                <h1 className=" ml-[100px] text-[24px] text-[#474747] !font-bold !leading-[38px] !font-[inter]">{titulo}</h1>
+                <a className=" text-red-500 text-[18px] mr-[85px]">Ver todos →</a>
             </div>}
-            <ul className="flex flex-wrap gap-[24px]">
+            <ul className="flex flex-wrap gap-[24px] ml-[100px] pb-[120px]">
                 {newProdutos.map((item)=>(
-                    <li className=" p-2 w-[292px] h-[439px]">
-                        <div className=" bg-white  rounded-[4px]  border-gray-30 shadow-sm w-[292px] h-[321px] ">
+                    <li className="">
+                        <div className=" bg-white rounded-[4px] border-gray-30 shadow-sm w-[272px] h-[301px] ">
                             <img src={item.img} alt={item.produto} />
                         </div>
                         <div>
