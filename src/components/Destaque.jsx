@@ -63,8 +63,8 @@ function Destaque () {
     <>
     {/* // colecao em destaque 1 */}
     <div className='bg-[#F9F8FE]'>
-      <h2 className='ml-[50px] pt-[38px] text-[24px] text-[#474747] !font-bold !leading-[38px] !font-[inter]'>Coleções em destaque</h2>
-      <div className='flex flex-row gap-[12px] mt-[20px] mr-[50px] ml-[50px]'>
+      <h2 className='ml-[100px] pt-[38px] text-[24px] text-[#474747] !font-bold !leading-[38px] !font-[inter]'>Coleções em destaque</h2>
+      <div className='flex flex-row gap-[12px] mt-[20px] ml-[100px]'>
           {destaqueCardsData.map((cardData, index) => (
               <div
               key={index}
