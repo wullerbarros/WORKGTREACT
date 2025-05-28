@@ -5,8 +5,8 @@ const Footer = () => {
     return (
 
         <>
-            <footer className="bg-gray-900 text-gray-300 py-8 !font-['Inter']">
-                <div className="container mx-auto  gap-8 px-4 flex justify-between">
+            <footer className="bg-gray-900 text-gray-300 !font-[Inter]">
+                <div className="container mx-auto flex justify-between">
                     <div>
                         <div className="flex flex-col font-['Inter'] text-[13px] leading-[24px] items-center w-70 gap-3 ml-[104px] mt-[72px]">
                             <Logo />
@@ -18,10 +18,10 @@ const Footer = () => {
                             <a href="#" className="hover:text-gray-400"><svg className="w-5 h-5 fill-current" viewBox="0 0 24 24"><path fill="currentColor" d="M23.953 4.57a10 10 0 0 1-2.825 9.565 5 5 0 0 1-7.123 2.34A5 5 0 0 1 5.158 7.354 10 10 0 0 0 2.055 3.75 10 10 0 0 0 8.3 21.255 5 5 0 0 1 17.945 12.646 5 5 0 0 1 12.3 3.354 10 10 0 0 1 23.953 4.57z" /></svg></a>
                         </div>
                     </div>
-                    <div className='ml-[205px]  mt-[72px]'>
-                        <h4 className="text-lg !font-semibold !font-['Inter'] text-[18px] text-white mb-2">Informação</h4>
+                    <div className='ml-[250px]  mt-[72px]'>
+                        <h4 className="text-lg !font-semibold !font-[Inter] text-[18px] text-white mb-2">Informação</h4>
                         <div className='mt-[28px]'>
-                        <ul>
+                        <ul className=' w-[200px]'>
                             <li className="mb-2"><a href="#" className="hover:text-gray-400 text-sm">Sobre Drip Store</a></li>
                             <li className="mb-2"><a href="#" className="hover:text-gray-400 text-sm">Segurança</a></li>
                             <li className="mb-2"><a href="#" className="hover:text-gray-400 text-sm">Wishlist</a></li>
@@ -46,7 +46,7 @@ const Footer = () => {
                     <div className="!font-[Inter] ml-[168px] mt-[72px]">
                         <h4 className="!font-[Inter] text-white text-[18px] leading-[18px] mp-2">Contato</h4>
                         <div className='mt-[28px]'>
-                        <p className="text-sm !font-[Inter] leading-[26px] text-[16px] mb-2">Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - CE, 60150-161</p>
+                        <p className="text-sm !font-['Inter'] leading-[26px] text-[16px]">Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - CE, 60150-161</p>
                         <p className="text-sm">(85) 3051-3411</p>
                         </div>
                     </div>
