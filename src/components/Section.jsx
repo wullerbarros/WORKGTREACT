@@ -1,13 +1,13 @@
 import React from 'react'
 import Destaque from './Destaque'
-import Cards2 from './Cards2'
 import OfertaEspecial from './OfertaEspecial'
+import Cards from './Cards'
 
 const Section = () => {
   return (
     <>
     <Destaque />
-    <Cards2 quantidade={8} className="grid grid-cols-4 mr-[100px] ml-[100px]"/>
+    <Cards quantidade={8} titulo="Produtos em alta" /> 
     <OfertaEspecial />
     </>
   )
