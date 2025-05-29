@@ -17,7 +17,7 @@ const Home = () => {
     <Section titleAlign="center">
       <Colecoes />
     </Section>
-    <Section title="Produtos em alta" link>
+    <Section title="Produtos em alta" link >
       <Cards quantidade={8} titulo="Produtos relacionados" />
     </Section>
     <OfertaEspecial />    

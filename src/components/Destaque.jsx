@@ -30,7 +30,7 @@ function Destaque () {
     
   return (
     <>    
-      <div className='flex flex-row gap-[12px] mt-[20px] justify-center'>
+      <div className='flex flex-row gap-[12px] pt-[20px] justify-center'>
           {destaqueCardsData.map((cardData, index) => (
               <div
               key={index}

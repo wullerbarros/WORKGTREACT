@@ -3,9 +3,11 @@ import {Link} from 'react-router-dom'
 const Section = ({ title='Coleções em destaque', titleAlign = 'left', link, children }) => {
   return (
     <section className="py-8 px-[100px] w-full bg-[#F9F8FE]">
-       <h1 className={`${titleAlign === 'center'? ' text-center' : 'text-left' } pt-[38px] text-[24px] text-[#474747] !font-bold !leading-[38px] !font-[inter]`}>{title}</h1>
-  
+       
+       <div className={`${titleAlign !== 'center' && 'flex items-center justify-between'}  pt-[38px]`}>
         
+       <h1 className={`${titleAlign === 'center'? ' text-center' : 'text-left' }  text-[24px] text-[#474747] !font-bold !leading-[38px] tracking-[0.75px] !font-[inter]`}>{title}</h1>
+          
         {link && (
           <Link 
           to='/produtos'
@@ -14,7 +16,8 @@ const Section = ({ title='Coleções em destaque', titleAlign = 'left', link, ch
             Ver todos →
           </Link>
         )}
-      <div className="w-full">
+       </div> 
+      <div>
         {children}
       </div>
     </section>
