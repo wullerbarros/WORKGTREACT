@@ -98,16 +98,12 @@ const produtos = [
 ]
 
 
-const Cards = ({quantidade, titulo}) => {
+const Cards = ({quantidade}) => {
   console.log(quantidade)
   const newProdutos = produtos.slice(0, quantidade)
   return (
     <>
     <section className="bg-[#F9F8FE] pt-[123px]">
-            { titulo && <div className="flex justify-between items-center mb-[20px]">
-                <h1 className=" ml-[100px] text-[24px] text-[#474747] !font-bold !leading-[38px] !font-[inter]">{titulo}</h1>
-                <a className=" text-red-500 text-[18px] mr-[85px]">Ver todos →</a>
-            </div>}
             <ul className="flex flex-wrap gap-[24px] ml-[100px] pb-[120px]">
                 {newProdutos.map((item)=>(
                     <li className="">
