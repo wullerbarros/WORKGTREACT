@@ -9,16 +9,16 @@ const Footer = () => {
 
         <>
             <footer className="bg-gray-900 text-gray-300 !font-[Inter]">
-                <div className="container mx-auto flex justify-between">
+                <div className="container mx-auto flex justify-between px-6 py-2">
                     <div>
-                        <div className="flex flex-col font-['Inter'] text-[13px] leading-[24px] items-center w-70 gap-3 ml-[104px] mt-[72px]">
+                    <div className="flex flex-col gap-6 font-['Inter'] text-[13px] leading-[24px] items-center w-70 gap-3 ml-[104px] mt-[72px]">
                             <Logo />
                             <p className="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
                         </div>
-                        <div className="flex gap-4 ml-[104px]">
-                            <a className="hover:text-gray-400"><FaFacebook/></a>
-                            <a className="hover:text-gray-400"><FaInstagram/></a>
-                            <a  className="hover:text-gray-400"><FaTwitter/></a>
+                        <div className="flex p-6 gap-7 ml-[104px] mb-40">
+                            <a className="hover:text-gray-400 text-2xl"><FaFacebook/></a>
+                            <a className="hover:text-gray-400 text-2xl"><FaInstagram/></a>
+                            <a  className="hover:text-gray-400 text-2xl"><FaTwitter/></a>
                         </div>
                     </div>
                     <div className='ml-[250px] mt-[72px]'>
@@ -47,7 +47,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="!font-[Inter] ml-[168px] mt-[72px]">
-                        <h4 className="!font-[Inter] text-white text-[18px] leading-[18px] mp-2">Contato</h4>
+                        <h4 className="!font-[Inter] text-white text-[18px] leading-[18px] mb-2">Contato</h4>
                         <div className='mt-[28px]'>
                         <p className="text-sm !font-['Inter'] leading-[26px] text-[16px]">Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - CE, 60150-161</p>
                         <p className="text-sm">(85) 3051-3411</p>
