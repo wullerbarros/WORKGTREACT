@@ -7,7 +7,7 @@ const OfertaEspecial = () => {
   return (
     <>
 
-<section className="w-[1440px] h-[553px] bg-[#ffff] flex flex-col  justify-center border">
+<section className="w-[1440px] h-[553px] bg-[#ffff] flex flex-col  justify-center ">
   <div className="grid md:grid-cols-2">
     <div className=" ml-[97px] ">
       <img src={tenis2} alt="Air Jordan edição de colecionador" className="w-[576px] h-[330px] object-cover mt-[115px]" style={{zIndex: "6", position: "absolute"}} />
