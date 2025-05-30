@@ -191,7 +191,7 @@ const ProductListingPage = () => {
     console.log("filtradosPorGenero", filtradosPorGenero);
     const produtosFiltrados = aplicacaoFiltroEstado(filtradosPorGenero, filtrosAtivos.estado)
     console.log("produtosFiltrados", produtosFiltrados);
-    setProdutosFiltrados(produtosFiltrados);
+    setProdutosFiltrados(produtosFiltrados || []);
   }, [filtrosAtivos]);
 
   useEffect(() => {
