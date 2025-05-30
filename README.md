@@ -1,12 +1,92 @@
-# React + Vite
+# 🛍️ Projeto Front-End E-commerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto de interface para um site de e-commerce desenvolvido durante o curso de Formação Full-Stack do programa **Geração Tech 2.0**, uma iniciativa do **Governo do Estado do Ceará** em parceria com o **IEL Ceará**.
 
-Currently, two official plugins are available:
+## 📌 Visão Geral
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O projeto consiste em uma aplicação React que simula a experiência de navegação em uma loja virtual, com listagem de produtos, filtros, páginas de visualização e formulário de cadastro. A aplicação foi estilizada com **Tailwind CSS** e utiliza bibliotecas modernas para construção de UI e ícones.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 Estrutura do Projeto
+
+├── public/                 
+├── src/                    
+│   ├── assets/             
+│   │   ├── img/         
+│   ├── components/       
+│   │   ├── Aside.jsx
+│   │   ├── CadastroForm.jsx
+│   │   ├── Cards.jsx
+│   │   ├── CarouselU.jsx
+│   │   ├── CarouselSwiper.jsx
+│   │   ├── Colecoes.jsx
+│   │   ├── Destaque.jsx
+│   │   ├── FilterGroup.jsx
+│   │   ├── FilterSection.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Header.jsx
+│   │   ├── Layout.jsx
+│   │   ├── Logo.jsx
+│   │   ├── OfertaEspecial.jsx
+│   │   ├── ProductoView.jsx
+│   │   ├── ResultadoCards.jsx
+│   │   ├── SearchBar.jsx
+│   │   └── Section.jsx
+│   ├── pages/              
+│   │   ├── Cadastro.jsx
+│   │   ├── Home.jsx
+│   │   ├── NotFound.jsx
+│   │   ├── ProductListingPage.jsx
+│   │   └── ProductViewPage.jsx
+│   ├── rotas/             
+│   │   └── Rotas.jsx
+│   ├── App.css            
+│   ├── App.jsx            
+│   ├── index.css          
+│   └── main.jsx            
+├── .gitignore             
+├── db.json                 
+├── eslint.config.js        
+├── index.html              
+└── package.json            
+
+## 🚀 Tecnologias Utilizadas
+
+- **React.js** – Biblioteca principal
+- **Tailwind CSS** – Utilizado para estilização rápida e responsiva
+- **Ant Design** – Componentes prontos de UI
+- **Lucide-react** – Ícones modernos e leves
+- **React Icons** – Biblioteca complementar de ícones
+- **React Router DOM** – Para navegação entre páginas
+- **Hooks** – Para gerenciamento de estado e efeitos colaterais
+
+---
+
+## 📸 Funcionalidades
+
+- 🏠 Página inicial com destaques e carrossel de produtos
+- 🔎 Filtros por categorias
+- 📦 Visualização de produto individual
+- 🧾 Formulário de cadastro
+- ❌ Página de erro (404)
+- 💡 Componentes reutilizáveis para construção modular
+
+---
+
+## 🌐 Deploy
+
+O projeto foi publicado na plataforma **Vercel**.  
+🔗 Acesse aqui: [https://seu-projeto.vercel.app](https://seu-projeto.vercel.app)
+
+---
+
+## 👩‍💻 Desenvolvido por
+
+Este projeto foi desenvolvido por participantes da Formação Full-Stack promovida pelo **Geração Tech 2.0**.
+
+---
+
+## 📜 Licença
+
+Este projeto é de uso educacional e sem fins lucrativos.
