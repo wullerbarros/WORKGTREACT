@@ -92,8 +92,12 @@ function CadastroForm() {
         <div className='flex items-center justify-center'>
             <p className='text-center pt-[30px] text-[#474747] text-[16px] !font-[inter] !font-normal !leading-[28px] !tracking-[0.75px]'>Ou faça seu login com</p>
             <div className="flex items-center justify-center gap-4 mt-8 ml-4 mb-4">
+              <a href="https://mail.google.com/" target="_blank" rel="">
                 <img src={gmail} alt="icone do gmail" className="w-[20px] h-[20px] cursor-pointer" />
+              </a>
+              <a href="https://facebook.com/" target="_blank" rel="">
                 <img src={face} alt="icone do facebook" className="w-[20px] h-[20px] cursor-pointer" />
+              </a>
             </div>
         </div>    
       </form>

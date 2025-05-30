@@ -1,6 +1,7 @@
 import React from 'react'
 import tenis2 from '../assets/tenis2.png'
 import Ellipse from '../assets/Ellipse 11.svg'
+import { Link } from 'react-router-dom'
 
 
 const OfertaEspecial = () => {
@@ -21,9 +22,11 @@ const OfertaEspecial = () => {
       <p className="text-gray-600 mb-6 !font-[inter]">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
       </p>
-      <button className ="bg-[var(--color-primary)] w-[200px] !text-white !font-[inter]  !text-[14px] py-3 px-6 rounded-md mt-[100px]">
+      <Link to="/produtos">
+      <button className ="bg-[var(--color-primary)] w-[200px] !text-white !font-[inter] cursor-pointer hover:bg-[#FF69B4] transition ease-in-out duration-300 !text-[14px] py-3 px-6 rounded-md mt-[100px]">
         Ver Oferta
       </button>
+      </Link>
     </div>
   </div>
 </section>

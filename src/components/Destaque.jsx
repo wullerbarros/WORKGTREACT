@@ -2,6 +2,7 @@ import React from 'react'
 import camisaPreta from '../assets/img/img-colecaoDestaque/camisaPreta.svg'
 import tenisPreto from '../assets/img/img-colecaoDestaque/tenisPreto.svg'
 import fone from '../assets/img/img-colecaoDestaque/fone.svg'
+import { Link } from 'react-router-dom'
 
 
 function Destaque () {
@@ -47,9 +48,11 @@ function Destaque () {
                       alt={cardData.altImagem}
                       className="w-[242px] h-[251px] transform translate-x-[80px] translate-y-[0px] absolute z-0"
                   />
+                  <Link to="/notfound">
                   <button className="bg-white z-10 hover:bg-[#E7FF86] cursor-pointer !w-[153px] !h-[48px] rounded-[8px] !mr-[190px] !font-bold !text-[#C92071]">
                       {cardData.textoBotao}
                   </button>
+                  </Link>
               </div>
           ))}
       </div>
