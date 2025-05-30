@@ -9,7 +9,7 @@ O projeto consiste em uma aplicação React que simula a experiência de navega�
 ---
 
 ## 📂 Estrutura do Projeto
-
+```
 ├── public/                 
 ├── src/                    
 │   ├── assets/             
@@ -49,7 +49,8 @@ O projeto consiste em uma aplicação React que simula a experiência de navega�
 ├── db.json                 
 ├── eslint.config.js        
 ├── index.html              
-└── package.json            
+└── package.json
+```       
 
 ## 🚀 Tecnologias Utilizadas
 
