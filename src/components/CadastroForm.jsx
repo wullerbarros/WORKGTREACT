@@ -11,7 +11,7 @@ function CadastroForm() {
   const [loading, setLoading] = useState(false);
   const [cadastroSucesso, setCadastroSucesso] = useState(false);
 
-  const handleChange = (e) => {
+  const handleChange = (e) => { 
     const { name, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,

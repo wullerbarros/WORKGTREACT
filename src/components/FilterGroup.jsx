@@ -34,7 +34,7 @@ const FilterGroup = ({ onApply }) => {
   };
 
   return (
-    <div className="pt-[120px] ml-[100px]">
+    <div className="pt-[56px] pl-[100px] relative">
       <div className="bg-[#FFFFFF] p-[30px] w-[308px] h-[720px]">
         <div className="flex justify-between items-center mb-2 font-bold text-[#474747]">
           <h2 className="text-base w-[85px] h-[24px] text-[#474747] !font-bold !font-[inter] tracking-[0.75px] mb-4">Filtrar por</h2>

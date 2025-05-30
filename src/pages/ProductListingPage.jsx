@@ -1,7 +1,6 @@
 import Aside from "../components/Aside";
 import Cards from "../components/Cards";
 import ResultadoCards from "../components/ResultadoCards";
-import Section from "../components/Section";
 
 
 const ProductListingPage = () => {
@@ -10,9 +9,9 @@ const ProductListingPage = () => {
     <ResultadoCards />
     <div className="flex flex-col-1 bg-[#F9F8FE]">
       <Aside />
-      <Section title="">
-      <Cards quantidade={15} className="ml-[0]" />
-      </Section>
+      <div className="pt-[56px] pl-[28px] pr-[100px]">
+      <Cards quantidade={15} />
+      </div>
     </div>  
       
     </>

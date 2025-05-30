@@ -29,7 +29,7 @@ const Header = () => {
             </Link>
           </div>
           <div className="flex items-center">
-            <Link to="/product/:id">
+            <Link to="/notfound">
               <img src={carrinho} alt="Carrinho de compras" className="w-[30px] h-[30px] !items-end cursor-pointer" />
             </Link>
           </div>

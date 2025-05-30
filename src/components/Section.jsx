@@ -4,9 +4,9 @@ const Section = ({ title='Coleções em destaque', titleAlign = 'left', link, ch
   return (
     <section className="py-8 px-[100px] w-full bg-[#F9F8FE]">
        
-       <div className={`${titleAlign !== 'center' && 'flex items-center justify-between'}  pt-[38px]`}>
+       <div className={`${titleAlign !== 'center' && 'flex items-center justify-between'} pt-[38px]`}>
         
-       <h1 className={`${titleAlign === 'center'? ' text-center' : 'text-left' }  text-[24px] text-[#474747] !font-bold !leading-[38px] tracking-[0.75px] !font-[inter]`}>{title}</h1>
+       <h1 className={`${titleAlign === 'center'? ' text-center' : 'text-left' }  text-[24px] text-[#474747] !font-bold !leading-[38px] pb-[20px] tracking-[0.75px] !font-[inter]`}>{title}</h1>
           
         {link && (
           <Link 
@@ -18,7 +18,7 @@ const Section = ({ title='Coleções em destaque', titleAlign = 'left', link, ch
         )}
        </div> 
       <div>
-        {children}
+        {children} 
       </div>
     </section>
   );

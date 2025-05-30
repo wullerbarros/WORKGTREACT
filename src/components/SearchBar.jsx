@@ -10,39 +10,39 @@ const products = [
 ];
 
 const SearchBar = () => {
-  const [searchTerm, setSearchTerm] = useState("");
-  const [filteredProducts, setFilteredProducts] = useState([]);
+  const [searchTerm, setSearchTerm] = useState(""); 
+  const [filteredProducts, setFilteredProducts] = useState([]); 
   const location = useLocation();
 
   // Limpa busca ao mudar de rota
-  useEffect(() => {
-    setSearchTerm("");
-    setFilteredProducts([]);
+  useEffect(() => { 
+    setSearchTerm(""); 
+    setFilteredProducts([]); 
   }, [location.pathname]);
 
   // Função para lidar com a entrada do usuário
-  const handleSearch = (event) => {
-    const term = event.target.value;
-    setSearchTerm(term);
+  const handleSearch = (event) => { 
+    const term = event.target.value; 
+    setSearchTerm(term); 
 
     // Filtra produtos com base no texto digitado
-    if (term.trim() === "") {
-      setFilteredProducts([]);
-      return;
+    if (term.trim() === "") { 
+      setFilteredProducts([]); 
+      return; // <-- Adicione este return!
     }
 
-    const filtered = products.filter((product) =>
-      product.name.toLowerCase().includes(term.toLowerCase())
+    const filtered = products.filter((product) => 
+      product.name.toLowerCase().includes(term.toLowerCase()) 
     );
-    setFilteredProducts(filtered);
+    setFilteredProducts(filtered); 
   };
 
   return (
     <div className="relative flex items-center w-[559px]">
-      <input
+      <input 
         type="text"
-        value={searchTerm}
-        onChange={handleSearch}
+        value={searchTerm} 
+        onChange={handleSearch} 
         placeholder="Pesquisar produto..."
         className="bg-gray-100 w-full h-[60px] pr-10 pl-3 rounded-md text-gray-700 font-inter focus:outline-none focus:ring-2 focus:ring-[#C92071]"
       />
@@ -51,9 +51,9 @@ const SearchBar = () => {
       </button>
       {filteredProducts.length > 0 && (
         <ul className="absolute z-10 w-full mt-[60px] bg-white border border-gray-200 rounded-md shadow-lg max-h-60 overflow-y-auto">
-          {filteredProducts.map((product) => (
+          {filteredProducts.map((product) => ( 
             <li
-              key={product.id}
+              key={product.id} //significa que vai mostrar os produtos
               className="px-4 py-2 text-gray-700 font-inter hover:bg-gray-100 cursor-pointer"
             >
               <Link
@@ -72,4 +72,3 @@ const SearchBar = () => {
 };
 
 export default SearchBar;
-

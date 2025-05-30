@@ -4,7 +4,7 @@
   };
     return (
         <>
-    <div className="bg-[#F9F8FE] w-full pt-[56px] pl-[100px] pr-[100px]">
+    <div className="bg-[#F9F8FE] pt-[56px] px-[100px]">
       <div className="flex items-center justify-between border-none !text-[16px] !font-[inter] !font-bold !text-[#474747] leading-[24px] tracking-[0.75px]">
         Resultados para {props.typeProduct} - {props.qtdProdutos} Tênis - 339 produtos
         <div className='flex px-6 py-2 border gap-2'>
