@@ -98,7 +98,7 @@ O projeto consiste em uma aplicação React que simula a experiência de navega�
 ## 🌐 Deploy
 
 O projeto foi publicado na plataforma **Vercel**.  
-🔗 Acesse aqui: [https://seu-projeto.vercel.app](https://seu-projeto.vercel.app)
+🔗 Acesse aqui: [https://workgtreact.vercel.app](https://workgtreact.vercel.ap)
 
 ---
 
