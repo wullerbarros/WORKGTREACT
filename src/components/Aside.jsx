@@ -1,28 +1,11 @@
 // import App from '../App.css'
-import { useState } from 'react'
 import FilterGroup from './FilterGroup.jsx'
 
-const produtosExemplo = [
-  { nome: "Tênis A", marca: "Adiddas", categoria: "Esporte e lazer", genero: "Masculino", estado: "Novo" },
-  { nome: "Tênis B", marca: "Nike", categoria: "Casual", genero: "Feminino", estado: "Usado" },
-  { nome: "Tênis C", marca: "Puma", categoria: "Corrida", genero: "Unisex", estado: "Novo" },
-];
-
-const Aside = () => {
-  const [filtrosAtivos, setFiltrosAtivos] = useState(null);
-
-  const produtosFiltrados = filtrosAtivos
-    ? produtosExemplo.filter((produto) =>
-        filtrosAtivos.marca.includes(produto.marca) &&
-        filtrosAtivos.categoria.includes(produto.categoria) &&
-        filtrosAtivos.genero.includes(produto.genero) &&
-        produto.estado === filtrosAtivos.estado
-      )
-    : produtosExemplo;
+const Aside = ({ onFilterApply }) => {
 
   return (
     <div className="flex">
-      <FilterGroup onApply={setFiltrosAtivos} />
+      <FilterGroup onApply={onFilterApply} />
       {/* <div className="ml-[320px] p-6 w-full">
         <h1 className="text-xl font-bold mb-4 text-[#991956]">Produtos</h1>
         <ul>

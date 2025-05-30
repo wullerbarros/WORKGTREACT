@@ -3,9 +3,9 @@ import FilterSection from "./FilterSection";
 
 const FilterGroup = ({ onApply }) => {
   const [filters, setFilters] = useState({
-    marca: ["", ""],
-    categoria: [""],
-    genero: ["", ""],
+    marca: [],
+    categoria: [],
+    genero: [],
     estado: "",
   });
 
