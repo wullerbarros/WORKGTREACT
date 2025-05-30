@@ -23,7 +23,7 @@ O projeto consiste em uma aplicação React que simula a experiência de navega�
 ![productView](https://github.com/user-attachments/assets/6462ec2c-c3b8-4275-bc76-97b1242cd35b)
 
 ### Página NotFound
-![NotFound](./src/assets/)
+![NotFound](https://github.com/user-attachments/assets/4c203c93-c1a9-4404-8a06-38ff3fce194f)
 
 
 ### Página Detalhe Produto
