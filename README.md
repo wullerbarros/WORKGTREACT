@@ -6,6 +6,13 @@ Este é um projeto de interface para um site de e-commerce desenvolvido durante 
 
 O projeto consiste em uma aplicação React que simula a experiência de navegação em uma loja virtual, com listagem de produtos, filtros, páginas de visualização e formulário de cadastro. A aplicação foi estilizada com **Tailwind CSS** e utiliza bibliotecas modernas para construção de UI e ícones.
 
+## Equipe de desenvolvedores
+
+Wuller Barros - TI e Oferta Especial
+Ana Cidrak - Footer
+Debora - Aside / Filtro
+Janiny - Header/Carousel/Coleção em destaque
+Jonathas - Cards
 ---
 
 ## Layout 
