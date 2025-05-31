@@ -2,6 +2,7 @@ import calcaTracada from '../assets/img/img-colecaoDestaque/calcaTraçada.svg';
 import camisaTracada from '../assets/img/img-colecaoDestaque/camisaTraçada.svg';
 import tenisTracado from '../assets/img/img-colecaoDestaque/tenisTraçado.svg';
 import foneTracado from '../assets/img/img-colecaoDestaque/foneTraçado.svg';
+import { Link } from 'react-router-dom';
 
 function Colecoes() {
   const colecaoDestaque = [
@@ -37,6 +38,7 @@ function Colecoes() {
       <div className="flex gap-4 flex-wrap justify-center mt-[20px]">
         {colecaoDestaque.map((item, idx) => (
           <div key={idx} className="flex flex-col items-center gap-[10px]">
+            <Link to="/produtos">
             <div className="bg-white w-[104px] h-[104px] p-[20px] rounded-[150px] flex items-center justify-center">
               <img
                 src={item.imagemSrc}
@@ -44,6 +46,7 @@ function Colecoes() {
                 className="w-[64px] h-[63.92px] hover:scale-110 hover:fill-pink-500 transition-transform duration-300 cursor-pointer"
               />
             </div>
+            </Link>
             <div>
               <h2 className="!font-[inter] !font-bold text-[14px] text-[#474747] hover:text-[#C92071] transition-colors duration-300">
                 {item.titulo}

@@ -8,7 +8,7 @@ const ProductViewPage = () => {
     <>
       <ProductView />
       <Section title="Produtos relacionados" link>
-      <Cards quantidade={4} produtos={[]} titulo="Produtos relacionados" />
+      <Cards quantidade={4} titulo="Produtos relacionados" produtos={[]} />
       </Section>
     </>
   );
