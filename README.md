@@ -11,7 +11,7 @@ O projeto consiste em uma aplicação React que simula a experiência de navega�
 - **Wuller Barros** – TI e Oferta Especial  
 - **Ana Cidrak** – Footer  
 - **Debora** – Aside / Filtro  
-- **Janiny Nóbrega** – Header / Carousel / Coleção em destaque / Cadastro / NotFound  
+- **Janiny Nóbrega** – Header / Carousel / Coleções em destaque / Section / Cadastro / NotFound  
 - **Jonathas** – Cards / Rotas
 
 ## Layout 
