@@ -10,14 +10,14 @@ O projeto consiste em uma aplicação React que simula a experiência de navega�
 
 - **Wuller Barros** – TI e Oferta Especial  
 - **Ana Cidrak** – Footer  
-- **Debora** – Aside / Filtro  
+- **Debora Schnornberger** – Aside / Filtro  
 - **Janiny Nóbrega** – Header / Carousel / Coleções em destaque / Section / Cadastro / NotFound  
 - **Jonathas** – Cards / Rotas
 
 ## Layout 
 
 ### Página Home
-![Home](https://github.com/user-attachments/assets/30fb2ab1-bd28-4780-9cfa-ff95b57b4a78)
+![Captura de tela 2025-05-31 233841](https://github.com/user-attachments/assets/b75e8d62-23c7-417a-8b44-1435f73b26ef)
 
 ### Página Produtos
 ![Produtos](https://github.com/user-attachments/assets/21bdb5f1-8630-42ce-ae08-9a508baacb4e)
@@ -29,8 +29,7 @@ O projeto consiste em uma aplicação React que simula a experiência de navega�
 ![productView](https://github.com/user-attachments/assets/6462ec2c-c3b8-4275-bc76-97b1242cd35b)
 
 ### Página NotFound
-![NotFound](https://github.com/user-attachments/assets/4c203c93-c1a9-4404-8a06-38ff3fce194f)
-
+![Captura de tela 2025-05-31 233910](https://github.com/user-attachments/assets/aaef9003-a06b-4ae1-ae68-d7977b3d6ff6)
 
 ### Página Detalhe Produto
 
