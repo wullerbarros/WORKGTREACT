@@ -1,7 +1,7 @@
 import React from 'react';
 import carrinho from '../assets/img/img-header/carrinho.svg'; 
 import Logo from './Logo';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import SearchBar from './SearchBar';
 
 
@@ -17,7 +17,7 @@ const Header = () => {
           </div>
           <div className="flex items-center gap-5 justify-between">
             <Link
-              to="/Cadastro"
+              to="/cadastro"
               className="text-[#4F4F4F] text-[16px] font-medium hover:underline cursor-pointer"
             >
               Cadastre-se
@@ -36,10 +36,55 @@ const Header = () => {
         </div>
         <nav className="h-[50px] items-left flex ml-[100px]">
           <ul className="flex gap-10 text-[#4F4F4F] text-[16px] font-medium items-center justify-center h-full">
-            <li><Link to="/" className="hover:underline hover:text-[#C92071] cursor-pointer">Home</Link></li>
-            <li><Link to="/produtos" className="hover:underline hover:text-[#C92071] cursor-pointer">Produtos</Link></li>
-            <li><Link to="/notfound"className="hover:underline hover:text-[#C92071] cursor-pointer">Categorias</Link></li>
-            <li><Link to="/notfound" className="hover:underline hover:text-[#C92071] cursor-pointer">Meus Pedidos</Link></li>
+            <li>
+              <NavLink
+                to="/"
+                end
+                className={({ isActive }) =>
+                  `hover:underline hover:text-[#C92071] cursor-pointer ${
+                    isActive ? 'font-bold text-[#C92071] underline' : ''
+                  }`
+                }
+              >
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/produtos"
+                className={({ isActive }) =>
+                  `hover:underline hover:text-[#C92071] cursor-pointer ${
+                    isActive ? 'font-bold text-[#C92071] underline' : ''
+                  }`
+                }
+              >
+                Produtos
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/notfound"
+                className={({ isActive }) =>
+                  `hover:underline hover:text-[#C92071] cursor-pointer ${
+                    isActive ? 'font-bold text-[#C92071] underline' : ''
+                  }`
+                }
+              >
+                Categorias
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/notfound"
+                className={({ isActive }) =>
+                  `hover:underline hover:text-[#C92071] cursor-pointer ${
+                    isActive ? 'font-bold text-[#C92071] underline' : ''
+                  }`
+                }
+              >
+                Meus Pedidos
+              </NavLink>
+            </li>
           </ul>
         </nav>
       </header>

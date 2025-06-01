@@ -110,7 +110,7 @@ const Cards = ({quantidade}) => {
     <>
             <ul className="flex flex-wrap justify-between w-full">
                 {newProdutos.map((item)=>(
-                    <Link to='/product/:id'>                    
+                    <Link to='/product/1'>                    
                     <li className="">
                         <div className=" bg-white rounded-[4px] border-gray-30 shadow-sm w-[272px] h-[301px] relative">
                             <img src={item.img} alt={item.produto} className='hover:translate-y-[-10px]'/>
