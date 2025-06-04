@@ -18,7 +18,7 @@ const Home = () => {
       <Colecoes />
     </Section>
     <Section title="Produtos em alta" link >
-      <Cards quantidade={8} titulo="Produtos relacionados" />
+      <Cards quantidade={8} titulo="Produtos relacionados" produtos={[]}/>
     </Section>
     <OfertaEspecial />    
     </>

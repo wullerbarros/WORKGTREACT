@@ -1,34 +1,34 @@
-import React from 'react'
-import camisaPreta from '../assets/img/img-colecaoDestaque/camisaPreta.svg'
-import tenisPreto from '../assets/img/img-colecaoDestaque/tenisPreto.svg'
-import fone from '../assets/img/img-colecaoDestaque/fone.svg'
-import { Link } from 'react-router-dom'
+import React from "react";
+import camisaPreta from "../assets/img/img-colecaoDestaque/camisaPreta.svg";
+import tenisPreto from "../assets/img/img-colecaoDestaque/tenisPreto.svg";
+import fone from "../assets/img/img-colecaoDestaque/fone.svg";
+import { Link } from "react-router-dom";
 
-
-function Destaque () {
-    const destaqueCardsData = [
+function Destaque() {
+  const destaqueCardsData = [
     {
-        desconto: '30% OFF',
-        titulo: 'Novo drop supreme',
-        imagemSrc: camisaPreta,
-        altImagem: 'camiseta preta',
-        textoBotao: 'Comprar'
+      desconto: "30% OFF",
+      titulo: "Novo drop supreme",
+      imagemSrc: camisaPreta,
+      altImagem: "camiseta preta",
+      textoBotao: "Comprar",
     },
     {
-        desconto: '30% OFF',
-        titulo: 'Coleção Adidas',
-        imagemSrc: tenisPreto,
-        altImagem: 'imagem de um tênis branco com detalhes pretos',
-        textoBotao: 'Comprar'
+      desconto: "30% OFF",
+      titulo: "Coleção Adidas",
+      imagemSrc: tenisPreto,
+      altImagem: "imagem de um tênis branco com detalhes pretos",
+      textoBotao: "Comprar",
     },
     {
-        desconto: '30% OFF',
-        titulo: 'Novo Beats Bass',
-        imagemSrc: fone,
-        altImagem: 'imagem de fone de ouvido, modelo Supra-auricular',
-        textoBotao: 'Comprar'
-    }]
-    
+      desconto: "30% OFF",
+      titulo: "Novo Beats Bass",
+      imagemSrc: fone,
+      altImagem: "imagem de fone de ouvido, modelo Supra-auricular",
+      textoBotao: "Comprar",
+    },
+  ];
+
   return (
     <>    
       <div className='flex flex-row gap-[12px] pt-[20px] justify-center'>
@@ -57,6 +57,6 @@ function Destaque () {
           ))}
       </div>
     </>
-  )
+  );
 }
-export default Destaque
+export default Destaque;
