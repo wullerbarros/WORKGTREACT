@@ -110,9 +110,11 @@ const ProductViewPage = () => {
                 ))}
               </div>
             </div>
+            <Link to="/notfound">
             <button className="w-[220px] h-[48px] rounded-[8px] bg-[#FFB31F] !text-[#F5F5F5] !font-[inter] !font-bold text-[16px] leading-[24px] tracking-[0.75px] !mt-[20px] !ml-[40px] hover:bg-[#f7d987] transition duration-300 ease-in-out cursor-pointer">
               COMPRAR
             </button>
+            </Link>
           </div>
         </div>
       </div>           

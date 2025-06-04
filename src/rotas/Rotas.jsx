@@ -16,12 +16,12 @@ const Rotas = () => {
             <Routes>
                 <Route path='/' element={<Layout />}>
                     <Route index element={<Home />} />
-                    <Route path='/product/:id' element={<ProductViewPage />} />
+                    <Route path='/product/1' element={<ProductViewPage />} />
                     <Route path='/produtos' element={<ProductListingPage />} />
                     <Route path='/notfound' element={<NotFound />} />
-                    <Route path='/Aside' element={<Aside />} />
-                    <Route path="/Cadastro" element={<Cadastro></Cadastro>}></Route>   
-                    <Route path="/CarouselSwiper" element={<CarouselSwiper></CarouselSwiper>}></Route>
+                    <Route path='/aside' element={<Aside />} />
+                    <Route path="/cadastro" element={<Cadastro></Cadastro>}></Route>   
+                    <Route path="/carouselSwiper" element={<CarouselSwiper></CarouselSwiper>}></Route>
                                          
                 </Route>
             </Routes>

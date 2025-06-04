@@ -50,7 +50,7 @@ function CarouselJ() {
           {slidesCarousel.map((slide, index) => (
             <div key={index}>
               <div className="flex min-h-[640px] items-center">
-                <div className="w-1/2 flex flex-col justify-center pl-[100px] pr-[80px]">
+                <div className="w-1/2 flex flex-col justify-center px-[100px]">
                   <p className="text-[#F6AA1C] !font-bold !tracking-widest text-base !font-[inter]">
                     {slide.title}
                   </p>
